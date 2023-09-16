@@ -1,0 +1,127 @@
+:root{
+    --primar-color: #fdb822;
+    --secondry-color: #684f40;
+    --color: #ffffff;
+    --tran: all 0.4s linear
+    --shadow: 0 0 74px rgb(10 10 10 / 7%);
+    -moz-box-shadow: 0 0 74px rgba(10,10,10,0.07);
+    -webkit-box-shadow: 0 0 74px rgb(10 10 10 / 7%);
+  }
+.services{
+    width: 100%;
+    height: auto;
+    background-color: aliceblue;
+}
+.container{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.service-heading h2{
+    color: var(--secondry-color);
+    font-size: 22px;
+    line-height: 30px;
+    text-transform: uppercase;
+    /* padding-left: 4rem; */
+    text-align: center;
+
+}
+.service-heading p{
+    color: var(--secondry-color);
+    font-size: 16px;
+    text-align: center;
+
+}
+.serviees-card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.main-service-cards{
+    margin-top: 2rem;
+ width: 22rem;
+ height: 22rem;
+ border-radius: 2px;
+ background: #f8f8f8;
+ box-shadow: 0 0 74px rgb(10 10 10 / 7%);
+    -moz-box-shadow: 0 0 74px rgba(10,10,10,0.07);
+    -webkit-box-shadow: 0 0 74px rgb(10 10 10 / 7%);
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.round-icon{
+    margin-top: 3rem;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid var(--secondry-color) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.round-icon:hover{
+    color: var(--primar-color);
+    transition: var(--tran);
+}
+.serive-icon{
+ font-size: 2rem;
+}
+.card-text{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.card-text h4{
+    color: var(--primar-color);
+
+}
+.card-text p{
+    padding-left: 10px;
+    text-align: center;
+    padding: 0 1.5rem;
+  color:rgb(65, 61, 61)
+}
+.card-text a{
+    text-decoration: none;
+    color: rgb(65, 61, 61);
+}
+.card-text a p:hover{
+    color: var(--primar-color);
+    transition: var(--tran);
+}
+@media screen and (max-width: 1170px) {
+    .services{
+        height: auto;
+    }
+}
+@media screen and (max-width: 790px) {
+    .main-service-cards{
+     width: 32rem;
+     height: 22rem;
+}
+}
+@media screen and (max-width: 610px) {
+    .main-service-cards{
+     width: 22rem;
+     height: 22rem;
+}
+}
+@media screen and (max-width: 380px) {
+    .main-service-cards{
+        margin-top: 1rem;
+     width: 18rem;
+     height: 22rem;
+}
+}

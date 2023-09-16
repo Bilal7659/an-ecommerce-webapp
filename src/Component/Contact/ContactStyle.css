@@ -1,0 +1,135 @@
+.location, .contact-page{
+    width: 100%;
+    height: auto;
+}
+.container{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.location-heading h2{
+    color: var(--secondry-color);
+    font-size: 22px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+.location-heading p{
+    color: var(--secondry-color);
+    font-size: 16px;
+    text-align: center;
+
+}
+.location-main-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.location-cards {
+  width: 300px;
+  height: 210px;
+  margin: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 74px rgb(10 10 10 / 7%);
+  -moz-box-shadow: 0 0 74px rgba(10, 10, 10, 0.07);
+  -webkit-box-shadow: 0 0 74px rgb(10 10 10 / 7%);
+  padding: 2rem;
+}
+                      /* -------------------map style -------------------- */
+.map-location{
+    width:100%;
+    margin-bottom: 3rem;
+}
+                      /* -------------------contact form -------------------- */
+                      
+.contact-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 5rem;
+    margin-top: 8rem;
+}
+.direct-contact{
+display: flex;
+flex-direction: column;
+}
+.icons{
+    display: flex;
+    justify-content: start;
+}.facebook, .twitter, .instagram{
+    background: rgb(134, 78, 78);
+    color: #fff;
+}
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+    padding-left: 4rem;
+}
+form input{
+height: 45px;
+width: 450px;
+border: none;
+padding: 12px;
+border-radius: 5px;
+background: aliceblue;
+}
+form h3{
+    color: rgb(134, 78, 78);
+    text-align: start;
+}
+form textarea{
+    width: 450px;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    background: aliceblue;
+}
+@media (max-width:920px){
+.contact-content{
+gap: 1rem;
+}
+}
+@media (max-width:850px){
+    .contact-content{
+     flex-direction: column;
+    }
+    .direct-contact{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    }
+@media (max-width:520px){
+form{
+padding-left: 0;
+}
+form input{
+    width: 350px;
+}
+form textarea{
+    width: 350px;
+}
+
+}
+@media (max-width:420px){
+    form{
+    padding-left: 0;
+    }
+    form input{
+        width: 280px;
+    }
+    form textarea{
+        width: 280px;
+    }
+    
+    }

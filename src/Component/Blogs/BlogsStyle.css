@@ -1,0 +1,138 @@
+.blogs, .blog-page{
+    width: 100%;
+    height: auto;
+}
+:root{
+    --primar-color: #fdb822;
+    --secondry-color: #684f40;
+    --color: #ffffff;
+    --tran: all 0.4s linear
+  }
+.container{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.blog-heading h2{
+    color: var(--secondry-color);
+    font-size: 22px;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding-left: 5rem;
+    align-items: center;
+}
+.blog-heading p{
+    color: var(--secondry-color);
+    font-size: 16px;
+
+}
+.blog-card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.card{
+    width: 24rem;
+    height: 32rem;
+    padding: 0 .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.card img{
+    width: 23rem;
+    height: 18rem;
+    object-fit: cover;
+
+}
+.card-line{
+    width: 10px;
+    border-bottom: 1px solid var(--primar-color);
+}
+.blog-content h5{
+    font-size: 18px;
+    color: rgb(83, 79, 79);
+    cursor: pointer;
+    font-family: Monstered;
+}
+.blog-content h5:hover{
+    color: var(--primar-color);
+    transition: var(--tran);
+}
+.blog-content p{
+    font-size: 16px;
+    color: grey;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-family: Monstered;
+     
+}
+               /* ------------------ main BlogPage ---------- */
+.main-blog-heading h2{
+    color: var(--secondry-color);
+    font-size: 50px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-top: 10rem;
+    font-family: Monstered;
+}
+.blogs-main-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 5rem 0 5rem ;
+}
+
+.blogs-cards {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: filter 0.5s;
+  box-shadow: 0 0 74px rgb(10 10 10 / 7%);
+  -moz-box-shadow: 0 0 74px rgba(10, 10, 10, 0.07);
+  -webkit-box-shadow: 0 0 74px rgb(10 10 10 / 7%);
+  background: var(--color);
+}
+
+.blogs-cards img {
+  width: 100%;
+  height: 35rem;
+  object-fit: cover;
+}
+.content{
+    padding: 2rem;
+}
+.content h2{
+    color: var(--secondry-color);
+}
+.content p{
+    color: gray;
+}
+@media screen and (max-width: 1180px) {
+    .blogs{
+        height: auto;
+    }
+    .blogs-main-card{
+        margin: 0 3rem 0 3rem ;
+    }
+
+}
+@media screen and (max-width: 720px) {
+    .container{
+        padding: .5rem;
+    }
+    .blogs-main-card{
+        margin: 0 0rem 0 0rem ;
+    }
+
+}

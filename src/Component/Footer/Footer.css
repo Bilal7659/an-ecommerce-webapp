@@ -1,0 +1,140 @@
+.footer{
+    height: auto;
+    width: 100%;
+    background-color: var(--secondry-color);
+  }
+.f-content{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-direction: row;
+    align-items: center;
+    color: var(--color);
+    margin-top: 30px;
+   
+  }.f-log img{
+    width: 120px;
+    height: 120px;
+    color: var(--color);
+  }
+  .container{
+    padding-left: 1.5rem;
+    padding-right: 2rem;
+  }
+  .f-content h2{
+    font-family: Montserrat;
+    text-transform:uppercase;
+    line-height: 35px;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+  }
+  .f-content p{
+    margin: 0 0 10px;
+    line-height: 25px;
+  }
+  .news-letter{
+    display: flex;
+  }
+  .news-letter input{
+    width: 280px;
+    height: 38px;
+    border: none;
+    outline: none;
+    color: var(--color);
+    padding: 0 15px;
+    border: none !important;
+    background-color: rgba(255,255,255,0.15);
+  }
+  .news-letter input::placeholder {
+    color: #999; 
+    /* padding: 5px; */
+  }
+  .news-letter button{
+    height: 38px;
+    cursor: pointer;
+    background-color: var(--primar-color);
+    border: none;
+    width: 50px;
+  }
+  .news-letter button:hover{
+    background-color: var(--color);
+    transition: var(--tran);
+  }
+  .send-icon{
+       /* font-size: large; */
+       color: var(--color);
+  }
+  .send-icon:hover{
+    color: var(--primar-color);
+  }
+  .line{
+    width: 75rem;
+    color: rgba(255,255,255,0.15);
+    margin-top: 2rem;
+
+  }
+  .copy{
+    display: flex;
+    justify-content: space-around;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 10px;
+    color: black;
+    background-color: var(--color); /* Background color for all icons */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    background-color: var(--primar-color); /* Hover background color for all icons (Facebook blue) */
+    transform: scale(1.1);
+    color: var(--color);
+  }
+  @media (max-width: 1100px) {
+    .line{
+      display: none;
+    }
+  }
+  @media (max-width: 768px) {
+    .f-content {
+      flex-direction: column;
+      justify-content: stretch;
+      align-items: start;
+    }
+    .footer{
+        width: 100%;
+    }
+    .f-log img {
+      margin-bottom: 20px;
+    }
+  
+    .news-letter input{
+      max-width: 20rem;
+    }
+  
+    .copy {
+      flex-direction: column;
+      justify-content: start;
+      flex-wrap: wrap;
+    }
+    .social-icons{
+      justify-content: start;
+    }
+  }
+  @media (max-width: 420px) {
+    .news-letter input{
+      max-width: 10rem;
+    }
+  }

@@ -1,0 +1,183 @@
+.About,
+.about-page {
+  width: 100%;
+  height: auto;
+  background: var(--color);
+}
+:root {
+  --primar-color: #fdb822;
+  --secondry-color: #684f40;
+  --color: #ffffff;
+  --tran: all 0.4s linear;
+}
+.container {
+  padding: 2rem 3rem;
+}
+.about-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; 
+  box-shadow: 0 0 74px rgb(10 10 10 / 7%);
+  -moz-box-shadow: 0 0 74px rgba(10, 10, 10, 0.07);
+  -webkit-box-shadow: 0 0 74px rgb(10 10 10 / 7%);
+}
+
+.about-cards {
+  width: 50%;
+  height: 85vh;
+  box-sizing: border-box;
+  background: var(--color);
+}
+.about-cards img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-cards-content {
+  padding: 2rem;
+}
+.about-cards-content h3 {
+  font-family: Montserrat;
+  text-transform: none;
+  line-height: 30px;
+  font-weight: 700;
+  font-style: normal;
+  color: #684f40;
+  font-size: 25px;
+}
+.about-cards-content p {
+  font-style: normal;
+  font-size: 15px;
+}
+.about-cards-content li {
+  list-style: none;
+  padding: 5px;
+  font-size: 16px;
+}
+
+/*----------------- aboutpage-----------------             */
+.main-about-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-about-heading h2 {
+  color: var(--secondry-color);
+  font-size: 50px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-top: 10rem;
+  font-family: Monstered;
+}
+/*------------------------- ourChifes--------------------*/
+.our-cheifs {
+  width: 100%;
+  height:auto;
+  background: var(--color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cheifs-heading h2{
+    color: var(--secondry-color);
+    font-size: 22px;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding-left: 8rem;
+    align-items: center;
+}
+.cheifs-heading p{
+    color: var(--secondry-color);
+    font-size: 16px;
+    text-align: center;
+
+}
+.cheif-main-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cheif-cards {
+  position: relative;
+  width: 300px;
+  height: 280px;
+  margin: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: filter 0.5s;
+  box-shadow: 0 0 74px rgb(10 10 10 / 7%);
+  -moz-box-shadow: 0 0 74px rgba(10, 10, 10, 0.07);
+  -webkit-box-shadow: 0 0 74px rgb(10 10 10 / 7%);
+  background: var(--color);
+}
+
+.cheif-cards img {
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondry-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.cheif-cards:hover .overlay {
+  opacity: 0.5;
+  color: #ffffff;
+}
+
+.name {
+  color: var(--color);
+  font-size: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 1170px) {
+  .About {
+    height: auto;
+  }
+  .about-content {
+    width: 50rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+  }
+  .about-cards {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 920px) {
+  .about-content {
+    width: 40rem;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 720px) {
+  .about-content {
+    width: 30rem;
+  }
+}
+@media screen and (max-width: 520px) {
+  .about-content {
+    width: 25rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  .about-content {
+    width: 20rem;
+  }
+}

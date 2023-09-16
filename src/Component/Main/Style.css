@@ -1,0 +1,54 @@
+.main-hero{
+    width: 100%;
+    height: 100vh;
+}
+.hero-content img{
+    width: 100%;
+    height: 82vh;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    object-fit: cover;
+    margin-top: 7rem;
+}
+.text-content{
+ position: absolute;
+ top: 45%;
+ left: 40%;}
+ .text-content h2{
+    color: rgb(255, 255, 255);
+    font-size: 47px;
+    z-index: 5;
+    font-family: Montserrat;
+    transition: none 0s ease 0s;
+    text-align: inherit;
+    border-width: 0px;
+    margin: 0px;
+    padding: 0px;
+    
+ }
+ .text-content p{
+    color: rgb(255, 255, 255);
+    z-index: 5;
+    font-family: Montserrat;
+    transition: none 0s ease 0s;
+    text-align: inherit;
+    font-size: 20px;
+    
+ }
+ @media screen and (max-width: 520px) {
+    .text-content{
+        position: absolute;
+        top: 40%;
+        left: 20%;
+    }
+ }
+ .main-hero{
+    height: auto;
+}
+ @media screen and (max-width: 412px) {
+    .text-content{
+        position: absolute;
+        top: 40%;
+        left: 15%;}
+ }

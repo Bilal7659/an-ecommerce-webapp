@@ -1,0 +1,137 @@
+.mainhead{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.06);
+    z-index: 2; 
+    position: absolute;
+}
+:root{
+    --primar-color: #fdb822;
+    --secondry-color: #684f40;
+    --color: #ffffff;
+    --tran: all 0.4s linear
+  }
+.navbar-bg{
+    background-color: #f5f5f5;
+}
+#navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+#navbar li{
+    list-style: none;
+    position: relative;
+
+}
+
+#navbar li a{
+  text-transform: uppercase;
+  line-height: 24px;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--secondry-color);
+  font-size: 15px;
+  font-weight: bolder;
+  text-decoration: none;
+}
+#navbar li a:hover{
+    text-decoration: 2px solid underline;
+color: var(--primar-color);
+transition: var(--tran);
+}
+.same-nav-link{
+    text-decoration: none;
+}
+.cart-icon {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .cart-icon__icon {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .cart-icon__caption {
+    position: absolute;
+    top: -12px;
+    right: -25px;
+    background-color: var(--primar-color);
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 2px 6px;
+    border-radius: 45%;
+  }
+.logo{
+    height: 80px;
+    width: 80px;
+  }
+.mobile-togle{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+@media screen and (max-width:940px) {
+    .mobile-logo{
+        display: block;
+      }
+      .hamburger{
+        display: block;
+        margin-top: 1rem;
+      }
+    .mobile-togle {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        gap: 5rem;
+    }
+    .mobile-togle .cart-icon{
+        margin-top: 2rem;
+    }
+    #navbar{
+        display: none;
+    }
+    .mobile-menu{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        top: -100vh;
+        left: 0;
+        position: absolute;
+        justify-content: space-between;
+        align-items: center;
+        background: #fff;
+        transition: 0.5s;
+    }
+    .nav{
+        height: 50vh;
+    }
+    .active{
+        top: 110px;
+    }
+    .nav li{
+        list-style: none;
+        position: relative;
+        font-size: 1.3rem;
+        padding-right: 3rem;
+        padding-top: 2px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .nav li a{
+        text-decoration: none;
+        color: var(--secondry-color);
+        cursor: pointer;
+    }
+    .nav li a:hover{
+        color: var(--primar-color);
+        transition: var(--tran);
+    }
+    
+}
